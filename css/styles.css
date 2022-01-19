@@ -28,6 +28,12 @@ h3 {
  font-size: .8rem;
 }
 
+h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 1rem .5rem 1rem;
+}
+
 .bell {
  padding: .5rem;
  fill: white;
@@ -48,5 +54,177 @@ grid-template-rows: auto;
 grid-template-areas:
 "header"
 "main-nav"
-"main";
+"main"
 }
+
+
+@keyframes ring {
+  20% {
+      transform: rotate(35deg);
+  } 
+  40% {
+      transform: rotate(-35deg);
+  }
+  60% {
+      transform: rotate(20deg);
+  }
+  80% {
+      transform: rotate(-20deg);
+  }
+}
+
+.bell-dot {
+ background: yellowgreen;
+ height: 4px;
+ width: 4px;
+ border-radius: 50%;
+ justify-self: end;
+ position: absolute;
+ z-index: 1;
+}
+
+.dropdown {
+  width: 100%;
+  text-align: center;
+}
+.alert-item {
+  padding: .5rem;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  transform: translate(0, 1rem);
+  z-index: 1;
+  background-color: rgb(233, 233, 240);
+  border: solid 1px rgb(106, 107, 201);
+  border-radius: 5px;
+  
+}
+.user {
+  border-radius: 50%;
+  height: 35px;
+  margin: 0 .5rem;
+}
+
+/* Nav */
+.main-nav {
+  padding-top: 10px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #8585ad;
+}
+
+.homesvg {
+  fill: white;
+  height: 30px;
+  width: 35px;
+  padding-left: 18px;
+}
+
+.homesvg {
+  fill: white;
+  height: 30px;
+  width: 35px;
+  padding-left: 18px;
+}
+
+.chartsvg {
+  fill: white;
+  height: 30px;
+  width: 35px;
+}
+
+.memberssvg {
+  fill: white;
+  height: 30px;
+  width: 35px;
+}
+
+.settingssvg {
+  fill: white;
+  height: 30px;
+  width: 35px;
+  padding-right: 18px;
+}
+
+
+
+/* .nav-img {
+  height: 25px;
+  margin: .5rem .8rem;
+} */
+
+
+.main-header {
+ display: grid;
+ grid-template-columns: 150px 1fr;
+ grid-area: dashboard;
+
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: .7rem 1rem;
+  margin: 0 auto;
+}
+
+/* tab */
+
+.tab {
+  background-color: rgba(236, 236, 236, 0.849);
+  border: solid 1px lightgrey;
+  border-right: none;
+}
+
+/* alert */
+
+.alert {
+  grid-area: alert;
+}
+
+.alert-banner {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(106, 107, 201);
+  color: white;
+  margin: 1rem 1rem 0;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+.alert p {
+  margin: .5rem 0;
+}
+.alert-banner-close:hover {
+  cursor: pointer;
+}
+
+/* Traffic */
+
+.traffic-nav-link {
+ padding: .5rem .8rem;
+ cursor: pointer;
+
+}
+
+.traffic-nav
+.active {
+  background: rgb(52, 172, 82);
+  color: white;
+  border-radius: 40px;
+}
+
+.traffic-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+/* Charts */
+
+
+
