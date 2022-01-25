@@ -2,13 +2,21 @@
 
 body {
   margin: 0;
+  overflow: hidden
 }
 
 header {
-  display: grid;
+  /* display: grid; */
   background-color: #8080ff;
-  grid-template-areas: 
-  "title bell picture name";
+  /* grid-template-areas: 
+  "title bell picture name"; */
+
+}
+
+header, .header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -29,24 +37,24 @@ h1 {
   font-family:  sans-serif;
   font-size: 20px;
   color: white;
-  grid-area: title;   
+  /* grid-area: title;    */
   margin-left: 5px;
   }
 
   .user {
     border-radius: 20%;
     height: 50px;
-    grid-area: picture;
-    margin-top: 8px;
+    /* grid-area: picture; */
+    /* margin-top: 8px; */
     margin-left: 30px;
 }
 
 .bell {
     border-right: solid 2px white;
     padding-right: 15px;
-    grid-area: bell;
-    margin-top: 18px;
-    margin-left: 20px;
+    /* grid-area: bell; */
+    /* margin-top: 18px; */
+    /* margin-left: 20px; */
     height: 40px;
     width: 30px;
     fill: white;
@@ -55,9 +63,9 @@ h1 {
 
 
 .bell:hover {
-  fill: blue;
+  fill: rgb(173, 255, 47);
   transition-property: fill;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   animation-duration: 3s;
 }
 
@@ -72,7 +80,7 @@ h1 {
 
 
 .dropdown {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 .alert-item {
