@@ -1,29 +1,105 @@
+  /* Base Styles */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 
 
 body {
   margin: 0;
-  overflow: hidden
-}
-
-header {
-  /* display: grid; */
-  background-color: #8080ff;
-  /* grid-template-areas: 
-  "title bell picture name"; */
-
-}
-
-header, .header-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+ }
 
 h1 {
   font-size: 1.125em;
 }
 
-.notifications {
+h2, h3 {
+  line-height: 1.6rem;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #8080ff;
+  color: white;
+  grid-area: header;
+  padding: 0 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   }
+
+.trademark {
+   font-weight: 150; 
+}
+
+.header h1,
+.header h3 {
+  text-transform: none;
+}
+
+.header h1 {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.header h3 {
+  font-size: .75em;
+}
+
+.header-right {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.header-notifications {
+  margin-right: 15px;
+  position: relative;
+}
+
+.notifications-icon {
+  height: 25px;
+  width: 25px;
+  fill: white;
+}
+  
+
+
+
+
+
+/* .notifications {
   margin-left: 25px;
   height: 3px;
   width: 3px;
@@ -33,20 +109,14 @@ h1 {
   background-color: greenyellow;
 }
 
-#webhead {
-  font-family:  sans-serif;
-  font-size: 20px;
-  color: white;
-  /* grid-area: title;    */
-  margin-left: 5px;
-  }
+
 
   .user {
     border-radius: 20%;
     height: 50px;
     /* grid-area: picture; */
     /* margin-top: 8px; */
-    margin-left: 30px;
+    /* margin-left: 30px;
 }
 
 .bell {
@@ -55,39 +125,39 @@ h1 {
     /* grid-area: bell; */
     /* margin-top: 18px; */
     /* margin-left: 20px; */
-    height: 40px;
+    /* height: 40px;
     width: 30px;
     fill: white;
     transition: fill 2s;
-}
+} */
 
 
-.bell:hover {
+/* .bell:hover {
   fill: rgb(173, 255, 47);
   transition-property: fill;
   transition-delay: 0.1s;
   animation-duration: 3s;
-}
+} */
 
-.myname {
+/* .myname {
   grid-area: name;
   text-align: right;
   margin-right: 5px;
   font-family:  sans-serif;
   color: white;
-}
+} */
 
 
 
-.dropdown {
+/* .dropdown {
   /* width: 100%; */
-  text-align: center;
+  /* text-align: center;
 }
 .alert-item {
   padding: .5rem;
-  margin: 0;
+  margin: 0; */
 }
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   transform: translate(0, 1rem);
@@ -96,68 +166,48 @@ h1 {
   border: solid 1px rgb(106, 107, 201);
   border-radius: 5px;
   
-}
+}  */
 
 
 /* Nav */
 
-nav {
-  padding-top: 10px;
-  padding-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #8585ad;
+/* nav {
+background-color: #4d4c72;
+grid-area: navigation;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 
-.homesvg {
-  fill: white;
-  height: 30px;
-  width: 35px;
-  padding-left: 18px;
-}
-
-.chartsvg {
-  fill: white;
-  height: 30px;
-  width: 35px;
-}
-
-.memberssvg {
-  fill: white;
-  height: 30px;
-  width: 35px;
-}
-
-.settingssvg {
-  fill: white;
-  height: 30px;
-  width: 35px;
-  padding-right: 18px;
-}
+.nav-icon {
+height: 40px;
+width: 40px;
+margin-top: 10px;
+} */
 
 
 
 /* Main */
 
-.main-header {
-  display: grid;
-  grid-template-areas: 
-  "dashboard tab";
-  grid-template-columns: 40% 60%;
+/* .main-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .headline {
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Nunito', sans-serif;
   padding-left: 8px;
   padding-right: 8px;
-  grid-area: dashboard;
+ 
 }
 
 .tab {
+  border-style: solid 1px lightgrey;
   background-color: lightgrey;
   border-left: solid 1px gray;
   border-bottom: solid 1px gray;
-  grid-area: tab;
+ 
 }
 
 .alert-banner {
@@ -244,7 +294,7 @@ h3 {
 
 /* Traffic */
 
-.traffic-nav-link {
+/* .traffic-nav-link {
  padding: .5rem .8rem;
  cursor: pointer;
 
@@ -264,7 +314,7 @@ h3 {
   justify-items: center;
   padding: 0 1rem;
   margin: 0;
-} */
+} */ */ */
 
 
 /*--GRID--*/
