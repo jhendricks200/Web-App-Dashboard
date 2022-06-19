@@ -82,7 +82,30 @@
      </div>
 
      <!-- line graph charts -->
-      <section class="traffic">
+     <fieldset>
+      <legend>View</legend>
+      <div class="traffic">
+        <input id="traffic-nav-link" name="view" type="radio" checked>
+        <label for="traffic-nav-link" onclick="">Hourly</label>
+    
+        <input id="traffic-nav-link" name="view" type="radio">
+        <label for="traffic-nav-link" onclick="">Daily</label>
+    
+        <input id="traffic-nav-link" name="view" type="radio">
+        <label for="traffic-nav-link" onclick="">Weekly</label>
+
+        <input id="traffic-nav-link" name="view" type="radio">
+        <label for="traffic-nav-link" onclick="">Monthly</label>
+
+        <div class="widget-container-full">
+          <!-- element line graph will attach to -->
+          <canvas id="traffic-chart"></canvas>
+        </div>
+        <a></a>
+      </div>
+    </fieldset>
+
+      <!-- <section class="traffic">
           <div class="traffic-header">
               <h4>Traffic</h4>
               <ul class="traffic-nav">
@@ -91,10 +114,8 @@
                   <li class="traffic-nav-link active" onclick="">Weekly</li>
                   <li class="traffic-nav-link" onclick="">Monthly</li>
              </ul>
-          </div>
-        <div class="widget-container-full">
-            <!-- element line graph will attach to -->
-            <canvas id="traffic-chart"></canvas>
+          </div> -->
+        
       </div>
       </section>
 
