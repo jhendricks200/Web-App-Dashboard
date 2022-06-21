@@ -213,7 +213,7 @@ header {
   padding-top: 10px;
   padding-bottom: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #8585ad;
 }
 
@@ -341,9 +341,107 @@ header {
   cursor: pointer;
 }
 
-/* Headers */
 
 /* Social media styles */
+
+.social-container {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  background-color: rgba(211, 209, 209, 0.2);
+  border: 1px rgba(170, 170, 170, 0.4) solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto
+}
+
+.social-image {
+  background-color: #5488CF;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  justify-self: center;
+  filter: invert(1);
+}
+
+.social-name {
+  color: #5488CF;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.social-numbers {
+    color: #5488CF;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* NEW MEMBERS */
+
+.members-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.member-name {
+  text-align: center;
+}
+
+.member-email {
+  color: #5488Cf;
+  text-align: center;
+  margin: 2px;
+}
+
+.sign-up {
+  text-align: center;
+}
+
+.members-text {
+  width: fit-content;
+  align-self: center;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+/* MESSAGE */
+
+.form-field,
+.form-area,
+.button-primary {
+  margin: 10px;
+  padding: 10px;
+}
+
+.widget-container {
+  display: grid;
+  row-gap: 5px;
+}
+
+.button-primary {
+  background-color: #7477bf;
+  color: #f5f5f5; 
+  border-radius: 10px; 
+}
+
 
 
 
