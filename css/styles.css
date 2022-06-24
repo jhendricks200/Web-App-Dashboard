@@ -38,6 +38,7 @@ h3 {
   font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
+  
 }
 
 p {
@@ -333,13 +334,39 @@ header {
 
 /* Traffic */
 
+.traffic{
+  padding: 10px;
+}
+
+.traffic-nav{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.traffic-nav-link{
+  padding: 5px;
+}
+
+.traffic-nav-link.active{
+  background-color: lightgreen;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
 .traffic-nav li {
+  
   list-style: none;
   margin: 5px 0 0 0;
   padding: 8px;
   border: none;
   cursor: pointer;
 }
+
+#traffic-chart,
+#daily-chart,
+#mobile-chart{
+  border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
+ }
 
 
 /* Social media styles */
@@ -387,10 +414,14 @@ header {
     color: rgba(0, 0, 0, 0.4);
 }
 
+.mobile-header {
+  margin-left: auto;
+}
+
 /* NEW MEMBERS */
 
 .members-container {
-  display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -420,6 +451,19 @@ header {
   align-self: center;
   overflow-wrap: break-word;
   text-align: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.members {
+  border-top: 1px rgba(170, 170, 170, 0.4) solid;
 }
 
 /* MESSAGE */
