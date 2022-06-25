@@ -522,8 +522,14 @@ header {
   
 }
 
-::placeholder {
-  text-align: right;
+
+
+#messageField {
+  display: block;
+  text-align: left;
+  white-space: nowrap;
+  color: lightgray;
+  font-size: 15px;
 }
 
 
