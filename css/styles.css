@@ -52,7 +52,7 @@ header {
   color: white;
   grid-area: header;
   padding: 0 10px;
-  width: 100vw;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,10 +251,10 @@ header {
 
  /* Dashboard */
 
- main {
+ /* main {
    display: grid;
    grid-area: main;
- }
+ } */
 
  .main-header {
    display: flex;
@@ -308,12 +308,12 @@ header {
  canvas {
    max-width: 100%;
  }
-
+ 
 .widget-container-full,
 .widget-container-half {
   margin: 10px;
   width: calc(100% - 20px);
-}
+} 
 
 /* Traffic */
 
@@ -322,17 +322,17 @@ header {
   top: -25px;
 }
 
-.daily-h3 {
+/* .daily-h3 {
   position: relative;
   top: -55px;
-}
+} */
 
 
-#traffic-chart,
+/* #traffic-chart,
 #daily-chart {
   position: relative;
   top: -30px;
-}
+} */
 
 .traffic{
   padding: 10px;
@@ -371,7 +371,7 @@ header {
  
  }
 
- #mobile-chart {
+ /* #mobile-chart {
   position: relative;
   top: -17px;
  }
@@ -379,7 +379,7 @@ header {
  .mobile-header {
   position: relative;
   top: -55px;
- }
+ } */
 
 /* Social media styles */
 
@@ -590,11 +590,15 @@ header {
   "header header" 
   "navigation main";
   }
+ 
+   .nav-class {
+   display: block;
+  } 
 
-  .nav-class {
-    height: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
+  .nav-icon {
+    width: 30px;
+    padding-bottom: 2.3rem;
+    line-height: 100%;
   }
 
 
@@ -621,10 +625,10 @@ header {
     grid-column: 1 / span 1;
     }
 
-  .mobile,
+  /* .mobile,
   .daily {
    padding: 5px;
-  }
+  } */
 
   /* .mobile {
     grid-column: 2 ;
@@ -641,17 +645,25 @@ header {
     width: 100%;
   }
 
-#traffic-chart,
+/* #traffic-chart,
 #daily-chart,
 #mobile-chart,{
 position: relative;
 top: -30px;
  
- }
+ } */
 
  #social-stats-header {
   margin: 10px 0;
  }
+ 
+ 
+ .graph-container {
+ display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+}
 
  .social-div {
   display: flex;
@@ -697,54 +709,6 @@ top: -30px;
 }
 
 
-
-
- /* WORKING ON ALIGNING THE SOCIAL STATS  */
-/* 
-  .social-widgets {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-  } */
-/* 
-  .social-container {
-    width: 31%;
-    max-width: 100%;
-    margin: 5px;
-  } */
-
-
-
-
-  /* .nav-icon {
-
-    margin: 10px ;
-}
-
-    .main {
-      grid-template-columns: 50% 50%;
-    }
-
-  .main-header {
-    width: 100%;
-  } */
-
-  /* .traffic-h4 {
-
-  }
-
-  .traffic-nav {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 50%;
-    margin: 0 auto;
-  } */
-
-  
-}
 
 
 

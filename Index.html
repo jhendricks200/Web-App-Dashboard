@@ -70,6 +70,7 @@
   </nav>
 
   <main>
+    
        <!-- Dashboard Header -->
       <div class="main-header"> 
       <h2 class="headline">Dashboard</h2>
@@ -100,9 +101,10 @@
       </div>
       </section>
 
-      <hr class="HR">
+      <!-- <hr class="HR"> -->
 
       <!-- bar graph -->
+      <div class="graph-container">
       <section class="daily">
           <h3 class="daily-h3">Daily Traffic</h3>
           <div class="widget-container-half">
@@ -110,8 +112,10 @@
           <canvas id="daily-chart"></canvas>
           </div>
       </section>
+   
 
        <!-- Doughnut Chart -->
+      
        <section class="mobile">
         <h3 class="mobile-header">Mobile Users</h3>
         <div class="widget-container-half">
@@ -119,6 +123,7 @@
         <canvas id="mobile-chart"></canvas>
         </div>
     </section>
+  </div>
 
       <!-- Social Media Status -->
       <section id="social-widgets">
@@ -282,7 +287,7 @@
   </label>
 
   <label class="switch-light switch-ios" onclick="">
-    <input type="checkbox" />
+    <input type="checkbox"/>
 
     <strong id="profile-label">
       Set Profile to Public
