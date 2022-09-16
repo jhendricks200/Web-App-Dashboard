@@ -432,8 +432,8 @@ header {
 } */
 
 /* NEW MEMBERS */
-.new-members-container,
-.members-container {
+
+/* .members-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,6 +443,16 @@ header {
     padding: 5px;
     width: 100%;
     height: auto;
+} */
+
+
+.members-container {
+align-items: center;
+justify-content:center;
+display: flex;
+flex-direction:column;
+margin: 1rem 0;
+border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
 }
 
 .member-name {
@@ -609,7 +619,7 @@ header {
     grid-template-columns: 50% 50%;
   } */
 
-  .traffic,
+  /* .traffic,
  
   .members,
   .recent-activity,
@@ -623,7 +633,10 @@ header {
 
   .daily {
     grid-column: 1 / span 1;
-    }
+    } */
+
+
+
 
   /* .mobile,
   .daily {
@@ -637,21 +650,17 @@ header {
   .traffic,
   .daily,
   .mobile,
-  .members,
+  /* .members, */
   #social-widgets,
-  .recent-activity,
+  /* .recent-activity, */
   .message,
   .settings {
     width: 100%;
   }
 
-/* #traffic-chart,
-#daily-chart,
-#mobile-chart,{
-position: relative;
-top: -30px;
+
  
- } */
+
 
  #social-stats-header {
   margin: 10px 0;
@@ -659,53 +668,42 @@ top: -30px;
  
  
  .graph-container {
- display: flex;
+  display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0 15px;
+  border:  rgba(170, 170, 170, 0.4) solid;
+
+}
+
+.daily {
+  border-right:  rgba(170, 170, 170, 0.4) solid;
+  top: -10px;
 }
 
  .social-div {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding 0 15px;
+  
  }
 
-   /* #social-widgets {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  } */
-
-   /* .social-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-     justify-content: space-between;
-  }  */
-
-  
-
-  
-
-  /* .members-container > p {
-    margin-left: auto;
-} */
 
  .members-container {
   flex-direction: row;
-  justify-content: flex-start;
-} 
+  /* justify-content: space-between;
+  padding: 1rem;
+  margin: 0; */
+}     
 
 .profile-image {
-  display: flex;
-  justify-content: flex-start;
+ 
   width: 50px;
   height: 50px;
-  
- 
+}
+
+.member-name,
+.member-email {
+
 }
 
 
