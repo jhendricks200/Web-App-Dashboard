@@ -8,7 +8,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: inherit; 
 }
 
 
@@ -306,7 +306,7 @@ header {
  }
 
  canvas {
-   max-width: 100%;
+  
  }
  
 .widget-container-full,
@@ -322,17 +322,19 @@ header {
   top: -25px;
 }
 
+/* currently trying to align the charts for the 768 view */
+
 /* .daily-h3 {
   position: relative;
   top: -55px;
 } */
 
-
-/* #traffic-chart,
+ 
+ /* #traffic-chart,
 #daily-chart {
   position: relative;
   top: -30px;
-} */
+}  */
 
 .traffic{
   padding: 10px;
@@ -364,9 +366,9 @@ header {
   cursor: pointer;
 }
 
-#traffic-chart,
-#daily-chart,
-#mobile-chart{
+.traffic,
+.daily,
+.mobile{
   border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
  
  }
@@ -611,41 +613,14 @@ border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
     line-height: 100%;
   }
 
-
-  
-
-  /* .main {
+  .traffic-header{
     display: grid;
-    grid-template-columns: 50% 50%;
-  } */
-
-  /* .traffic,
- 
-  .members,
-  .recent-activity,
-  .alert,
-  .message,
-  .settings,
-  .main-header 
-   {
-    grid-column: 1 / span 2;
+    grid-auto-flow: column;
+    
   }
 
-  .daily {
-    grid-column: 1 / span 1;
-    } */
 
 
-
-
-  /* .mobile,
-  .daily {
-   padding: 5px;
-  } */
-
-  /* .mobile {
-    grid-column: 2 ;
-  } */
 
   .traffic,
   .daily,
@@ -665,6 +640,8 @@ border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
  #social-stats-header {
   margin: 10px 0;
  }
+
+
  
  
  .graph-container {
@@ -672,8 +649,6 @@ border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
   justify-content: space-between;
   width: 100%;
   padding: 0 15px;
-  border:  rgba(170, 170, 170, 0.4) solid;
-
 }
 
 .daily {
@@ -689,10 +664,9 @@ border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
 
 
  .members-container {
-  flex-direction: row;
-  /* justify-content: space-between;
-  padding: 1rem;
-  margin: 0; */
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
 }     
 
 .profile-image {
@@ -702,30 +676,40 @@ border-bottom: 1px rgba(170, 170, 170, 0.4) solid;
 }
 
 .member-name,
-.member-email {
+.member-email{
+ text-align: left;
+ margin-left: 10px;
+}
 
+.members-text {
+  margin-left: 10px;
+  text-align: left;
 }
 
 
 
 
+@media (min-width: 1024px){
+/* 
+  .grid-container{
+    max-width: 100%;
+  } */
+   
+  /* .new-members-only {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 20px;
+  } 
 
+  .recent-activity {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-gap: 20px;
+  } */
 
-
-
-/*--GRID--*/
-
-/* grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-      "header"
-      "navigation"
-      "main";
-      flex-direction: column;
-} */
-
-
-
-
+  .members-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
